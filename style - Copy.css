@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #222;
+  transition: 0.3s;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+#toggleMode {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: #4a90e2;
+  border-radius: 5px;
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 20px;
+}
+
+.anime-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.anime-card:hover {
+  transform: scale(1.03);
+}
+
+.anime-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+.dark-mode header {
+  background-color: #222;
+}
+
+.dark-mode .anime-card {
+  background-color: #2d2d2d;
+}
+
+.dark-mode #toggleMode {
+  background-color: #4a90e2;
+  color: white;
+}
